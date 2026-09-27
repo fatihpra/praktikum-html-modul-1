@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Registrasi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            width: 500px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="url"],
+        input[type="number"],
+        textarea {
+            width: 180px;
+        }
+
+        textarea {
+            height: 55px;
+        }
+
+        .pendek {
+            width: 100px !important;
+        }
+
+        .tanggal {
+            width: 100px !important;
+        }
+
+        .tombol {
+            width: 500px;
+        }
+
+        .tombol input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form Registrasi</h2>
+
+    <form action="" method="get">
+
+        <!-- BIODATA -->
+        <fieldset>
+            <legend>Biodata</legend>
+
+            <table>
+
+                <tr>
+                    <td>Nama Mahasiswa</td>
+                    <td>
+                        <input type="text"
+                               name="nama"
+                               placeholder="Nama Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>No Induk Mahasiswa (NIM)</td>
+                    <td>
+                        <input type="text"
+                               name="nim"
+                               placeholder="123456789">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Alamat Mahasiswa</td>
+                    <td>
+                        <textarea name="alamat"
+                                  placeholder="Jl. Alamat Anda"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>
+                        <input type="date"
+                               name="tanggal_lahir"
+                               class="tanggal">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio"
+                               name="jenis_kelamin"
+                               value="Pria"
+                               checked>
+                        Pria
+
+                        <input type="radio"
+                               name="jenis_kelamin"
+                               value="Wanita">
+                        Wanita
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Upload Foto</td>
+                    <td>
+                        <input type="file"
+                               name="foto">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>URL Website</td>
+                    <td>
+                        <input type="url"
+                               name="website"
+                               placeholder="URL Website Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Perguruan Tinggi</td>
+                    <td>
+                        <select name="perguruan_tinggi">
+                            <option value="telkom">Telkom University</option>
+                            <option value="its">Institut Teknologi Sepuluh Nopember</option>
+                            <option value="unair">Universitas Airlangga</option>
+                            <option value="ubaya">Universitas Surabaya</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+
+        <!-- INFO AKUN -->
+        <fieldset>
+            <legend>Info Akun</legend>
+
+            <table>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email"
+                               name="email"
+                               placeholder="Email Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text"
+                               name="username"
+                               placeholder="Username Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password"
+                               name="password"
+                               placeholder="Password Anda">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ulangi Password</td>
+                    <td>
+                        <input type="password"
+                               name="ulang_password"
+                               placeholder="Password Anda">
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+
+        <!-- KEMAMPUAN DASAR -->
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+
+            <input type="checkbox"
+                   name="skill_html"
+                   value="HTML">
+            HTML
+
+            <input type="checkbox"
+                   name="skill_css"
+                   value="CSS">
+            CSS
+
+            <input type="checkbox"
+                   name="skill_javascript"
+                   value="Javascript">
+            Javascript
+
+            <input type="checkbox"
+                   name="skill_php"
+                   value="PHP">
+            PHP
+
+            <input type="checkbox"
+                   name="skill_mysql"
+                   value="MySQL">
+            MySQL
+
+            <input type="checkbox"
+                   name="skill_laravel"
+                   value="Laravel">
+            Laravel
+
+            <input type="checkbox"
+                   name="skill_react"
+                   value="React Native">
+            React Native
+        </fieldset>
+
+
+        <!-- BUTTON -->
+        <div class="tombol">
+
+            <input type="reset"
+                   value="Reset">
+
+            <input type="submit"
+                   value="Simpan">
+
+            <input type="button"
+                   value="Button"
+                   onclick="">
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
